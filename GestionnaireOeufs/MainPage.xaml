@@ -1,13 +1,214 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GestionnaireOeufs.MainPage">
+             x:Class="GestionnaireOeufs.MainPage"
+             Title="Gestionnaire">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <!--<BoxView Color="Aqua" />-->
+                <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Text="Pack 6 S"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Column="1"
+                 Color="LightSkyBlue" />-->
+                <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Column="1"
+               Text="Pack 12 S"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+                
+                <!--<BoxView Grid.Column="2"
+                 Color="CadetBlue" />-->
+                <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/> 
+                <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Column="2"
+               Text="Pack 30 S"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="1"
+                 Color="CornflowerBlue" />-->
+                <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Row="1"
+               Text="Pack 6 M"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="DodgerBlue" />-->
+                <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="Pack 12 M"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="1"
+                 Grid.Column="2"
+                 Color="DarkSlateBlue" />-->
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Row="1"
+               Grid.Column="2"
+               Text="Pack 30 M"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="2"
+                 Color="SteelBlue" />-->
+                <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Row="2"
+               Text="Pack 6 L"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="LightBlue" />-->
+                <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="supp"
+                    HorizontalOptions="Start"
+                    VerticalOptions="End"/>
+                <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="35"
+                    Text="ajout"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+                <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="Pack 12 L"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+                
+                <!--<BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="BlueViolet" />-->
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        Margin="35"
+                        Text="supp"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"/>
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        Margin="35"
+                        Text="ajout"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"/>
+                <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="Pack 30 L"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
+
+                <Button Grid.Row="3"
+                 Grid.Column="1"
+                 Margin="30"
+                x:Name="HistoriqueBtn"
+                Text="Historique" 
+                Clicked="HistoriqueBtn_Clicked"
+                HorizontalOptions="Fill" /> 
+
+            </Grid>
+            <!--<Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
@@ -29,8 +230,9 @@
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill" />-->
         </VerticalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>
